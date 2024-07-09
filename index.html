@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Daily Task Manager</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<h1>To-Do List</h1>
+<p id='date'></p>
+<center><input type='text' id='task' placeholder='New task:'>
+  <button onclick='addTask()'>Add Task</button>
+</center>
+<br>
+<center><input type='number' id='taskCompleted' placeholder='Task Completed:'>
+  <button onclick='completeTask()'>Complete Task</button>
+</center>
+<br>
+<div class='container'>
+  <div class='card'>
+    <ol id='tasksList'>
+    </ol>
+  </div>
+</div>
+<br>
+<center><button id='clearButton'>Clear tasks</button></center>
+<!-- partial -->
+  <script  src="./script.js"></script>
+
+</body>
+</html>
